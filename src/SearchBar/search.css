@@ -1,0 +1,55 @@
+.input-box input{
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    margin-left: 90px;
+}
+.input-box input::placeholder{
+    font-size: 20px;
+}
+table,tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 280px;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    margin-left: 890px;
+    width: 100px;
+    aspect-ratio: 1;
+    display:grid;
+    -webkit-mask: conic-gradient(from 15deg,#0000,#000);
+    animation: l26 1s infinite steps(12);
+  }
+  .loader,
+  .loader:before,
+  .loader:after{
+    background:
+      radial-gradient(closest-side at 50% 12.5%,
+       #1a1415 96%,#0000) 50% 0/20% 80% repeat-y,
+      radial-gradient(closest-side at 12.5% 50%,
+       #0e0d0d 96%,#0000) 0 50%/80% 20% repeat-x;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1/1;
+    transform: rotate(30deg);
+  }
+  .loader:after {
+    transform: rotate(60deg);
+  }
+  
+  @keyframes l26 {
+    100% {transform:rotate(1turn)}
+  }
